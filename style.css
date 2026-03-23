@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+body {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 nav {
     border-bottom: 1px solid black;
     height: 50px;
@@ -28,6 +33,7 @@ nav li:nth-child(2) {
 
 nav li:last-child {
     margin-right: 8px;
+    cursor: pointer;
 }
 
 .logo {
@@ -48,16 +54,100 @@ nav li:last-child {
     border-radius: 50%;
 }
 
-.sideBar{
-    background-color: #111;
+.sideBar {
+    background-color: #1d003c;
     height: 100%;
     position: fixed;
     overflow: hidden;
     transition: width 0.3s ease-in-out;
     width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .sideBar.open {
     width: 250px;
     transition: width 0.5s ease-in-out;
+}
+
+@media screen and (min-width:750px) {
+    .sideBar {
+        width: 250px;
+    }
+
+    .sideBar.open {
+        width: 0;
+    }
+}
+
+.items {
+    width: 100%;
+    border-bottom: 1px solid rgb(51, 51, 51);
+    padding: 18px 0 18px 20px;
+}
+
+.logo-in-sideBar {
+    height: 40px;
+}
+
+.item1 {
+    display: flex;
+}
+
+.item1 p {
+    margin-left: 129px;
+}
+
+.item8 {
+    border: none;
+}
+
+.item8 img {
+    height: 17px;
+}
+
+.item8 span {
+    display: flex;
+    align-items: center;
+}
+
+.item8 .t1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    border-radius: 50%;
+    background-color: violet;
+}
+
+.item8 .t2 {
+    margin-left: 10px;
+}
+
+.sideBar a {
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    cursor: pointer;
+}
+
+.sideBar .h1:hover {
+    transform: translateX(40px);
+    transition: 0.3s;
+}
+
+#cross{
+    cursor: pointer;
+}
+
+.span3 div{
+    background-color: red;
+}
+
+.t1.lastTwo{
+    background-color: transparent;
+}
+.t1.lastTwo img{
+    height: 27px;
 }
