@@ -4,33 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sidebar UI</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
     <nav>
         <div class="nav-inside-wrapper">
             <ul>
-                <li class="nav-li-1">
-                    <img class="logo" src="RHC logo.svg">
+                <li>
+                    <img class="logo" src="RHC logo.svg" alt="Logo">
                 </li>
+
                 <li class="nav-li-2">
                     <div class="profile-wrapper">
-                        <img src="https://richind.org/user_panel/assets/images/user.svg">
+                        <img src="https://richind.org/user_panel/assets/images/user.svg" alt="User">
                     </div>
                 </li>
+
+                <!-- Menu (hidden on large screens) -->
                 <li>
-                    <img id="menu" class="menu" src="menu.png">
+                    <img id="menu" class="menu" src="menu.png" alt="Menu">
                 </li>
             </ul>
         </div>
     </nav>
+
+    <!-- Sidebar -->
     <div id="sideBar" class="sideBar">
         <div class="items item1">
-            <img class="logo-in-sideBar" src="RHC logo.svg">
+            <img class="logo-in-sideBar" src="RHC logo.svg" alt="Logo">
             <p id="cross">❌</p>
         </div>
+
         <a href="#">
             <div class="items item2">
                 <p class="h1">Home</p>
@@ -61,21 +68,61 @@
                 <p class="h1">Contact</p>
             </div>
         </a>
+
         <div class="items item8">
             <span>
-                <div class="t1"><img src="mail.png"></div>
+                <div class="t1"><img src="mail.png" alt=""></div>
                 <div class="t2">info@gmail.com</div>
             </span><br>
+
             <span>
-                <div class="t1"><img src="telephone.png"></div>
+                <div class="t1"><img src="telephone.png" alt=""></div>
                 <div class="t2">+91 99999 99999</div>
             </span><br>
+
             <span>
-                <div class="t1 lastTwo"><img src="instagram.png"></div>
-                <div class="t1 lastTwo t2 youtube-in-sideBar"><img src="youtube.png"></div>
+                <div class="t1 lastTwo"><img src="instagram.png" alt=""></div>
+                <div class="t1 lastTwo"><img src="youtube.png" alt=""></div>
             </span>
         </div>
     </div>
+
+    <!-- Main -->
+    <main>
+        <div class="announcement">Offer banner or announcement</div>
+
+        <div class="highlights">
+            <p>Highlights vo bhi moving </p>
+        </div>
+
+        <div class="content">
+            <h2>About us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut totam minima hic, quibusdam nulla, debitis
+                neque eos quam nesciunt assumenda, ipsam eum nostrum deleniti facilis perspiciatis numquam atque enim
+                maiores suscipit voluptas. Quaerat!</p><br>
+
+            <h2>My Vision</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut totam minima hic, quibusdam nulla, debitis
+                neque eos quam nesciunt assumenda, ipsam eum nostrum deleniti facilis perspiciatis numquam atque enim
+                maiores suscipit voluptas. Quaerat!</p><br>
+
+            <h2>About Me</h2>
+            <div class="myPhoto-wrapper">
+                <img src="user.png" alt="Neeraj Srivastava" class="myPhoto">
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut totam minima hic, quibusdam nulla, debitis
+                neque eos quam nesciunt assumenda, ipsam eum nostrum deleniti facilis perspiciatis numquam atque enim
+                maiores suscipit voluptas. Quaerat!</p><br>
+        </div>
+        <div class="contact">
+            <h2>Contact Us</h2><br><br>
+            Instagram: <a href="#">instagram.user</a><br><br>
+            Gmail: <a href="#">info@gmail.com</a><br><br>
+            Telegram: <a href="#">telegram.neeraj</a>
+        </div>
+        <div class="gallary"></div>
+    </main>
+
     <script src="script.js"></script>
 </body>
 
