@@ -79,6 +79,10 @@ nav li:first-child {
     #cross {
         display: none;
     }
+
+    .highlights p {
+    animation: scroll 30s linear infinite;
+}
 }
 
 /* ITEMS */
@@ -153,6 +157,7 @@ nav li:first-child {
 .highlights p {
     display: inline-block;
     animation: scroll 10s linear infinite;
+    width: 100%;
 }
 
 @keyframes scroll {
